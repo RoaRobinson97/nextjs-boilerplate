@@ -3,7 +3,10 @@ const withPolyfill = require('next-with-polyfill');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true
+  reactStrictMode: true,
+  eslint: {
+    dirs: ['pages'], // Only run ESLint on the 'pages' and 'utils' directories during production builds (next build)
+  },
 };
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({

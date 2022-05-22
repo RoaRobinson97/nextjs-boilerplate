@@ -9,10 +9,7 @@ module.exports = {
     'airbnb',
     'plugin:prettier/recommended',
     'eslint:recommended',
-    'plugin:storybook/recommended',
-    'plugin:import/recommended',
-    'plugin:storybook/recommended',
-    'plugin:mdx/recommended'
+    'plugin:import/recommended'
   ],
   settings: {
     'mdx/code-blocks': true,
@@ -40,8 +37,6 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off',
     'import/extensions': 'off',
     'import/no-unresolved': 'off',
-    'react/function-component-definition': 'off',
-    'react/prop-types': 'off'
-
+    'react/function-component-definition': 'off'
   }
 };
