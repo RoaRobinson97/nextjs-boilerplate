@@ -2,12 +2,11 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 const devMode = process.env.NODE_ENV === 'development';
 
 module.exports = {
-  entry: './src/index',
+  entry: ['babel-polyfill','./src/pages/index'],
   output: {
     path: path.join(__dirname, 'dist/'),
     publicPath: '/',
@@ -50,7 +49,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './public/index.html'
     }),
-    new BundleAnalyzerPlugin(),
     new MiniCssExtractPlugin({
       filename: devMode ? '[name].css' : '[name].[hash].css',
       chunkFilename: devMode ? '[id].css' : '[id].[hash].css'

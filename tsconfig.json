@@ -2,15 +2,36 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
-    "lib": ["dom", "es5", "es6"],
-    "types": ["cypress"],
-    "jsx": "react",
+    "lib": [
+      "dom",
+      "es5",
+      "es6"
+    ],
+    "types": [
+      "cypress"
+    ],
+    "jsx": "preserve",
     "sourceMap": true,
     "outDir": "./dist",
     "importHelpers": true,
     "strict": true,
     "moduleResolution": "node",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true
   },
-  "include": ["**/*.ts","**/*.tsx", "**/*.js", "**/*.mdx"]
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "**/*.mdx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
