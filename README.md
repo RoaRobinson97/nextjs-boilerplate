@@ -91,4 +91,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Why-did-you-render
 
-### React-sight
+### Extensions: React-sight, React dev tools, profiler
+
+### https://github.com/enaqx/awesome-react#data-managing
+
+Singleton: Logger
+Strategy: Else if for constructor

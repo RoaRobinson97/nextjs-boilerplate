@@ -1,4 +1,5 @@
-import '../styles/globals.css';
+/* eslint-disable react/prop-types */
+import '../styles/global.scss';
 import React from 'react';
 
 function MyApp({ Component, pageProps }) {
