@@ -13,10 +13,14 @@
     width: 100%;
     height: auto;
 
-    @include xs-landscape {
+    @include small {
+      background: black;
+    }
+
+    @include medium {
       background: red;
     }
-    @include xs-portrait {
+    @include large {
       background: green;
     }
     
